@@ -316,7 +316,7 @@ testing = ["flake8 (<5)", "flufl.flake8", "importlib-resources (>=1.3)", "packag
 name = "ipynb-py-convert"
 version = "0.4.6"
 description = "Convert .py files runnable in VSCode/Python or Atom/Hydrogen to jupyter .ipynb notebooks and vice versa"
-category = "dev"
+category = "main"
 optional = false
 python-versions = "*"
 files = [
@@ -1089,4 +1089,4 @@ testing = ["big-O", "flake8 (<5)", "jaraco.functools", "jaraco.itertools", "more
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "db7de4fe12339bd148dc21975807e193171fe578dec050c8f641d45a0a18c9fb"
+content-hash = "a260506086480ef795f70b4be418e81e29edb621ba36a5d5ea203d5547f9523c"

@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "bmkventures-stock-app"
+name = "bmktventures_stock_app"
 version = "0.1.0"
 description = ""
 authors = ["mktcowboy <bmktventures@gmail.com>"]
@@ -8,13 +8,13 @@ packages = [{include = "bmkventures_stock_app"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
-yahoo-fin = "^0.8.9.1"
+ipynb-py-convert = "^0.4.6"
 pandas = "^2.0.0"
+yahoo-fin = "^0.8.9.1"
 
 [tool.poetry.group.dev.dependencies]
 icecream = "^2.1.3"
 ipython = "^8.12.0"
-ipynb-py-convert = "^0.4.6"
 
 [build-system]
 requires = ["poetry-core"]
