@@ -14,3 +14,5 @@ python news.py
 * [Issues](https://github.com/pythoninthegrass/bmkventures_stock_app/issues)
 * Document asdf, poetry, and other tooling
   * cf. [python_template](https://github.com/pythoninthegrass/python_template/tree/main/markdown) for meow
+* Translate [news.py](news.py) to an `ipynb` via [ipynb-py-convert](https://pypi.org/project/ipynb-py-convert/)
+  * Debug path after
