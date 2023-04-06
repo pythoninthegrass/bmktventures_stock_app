@@ -1,24 +1,25 @@
 #!/usr/bin/env python3
 
 import datetime
-import os
 import pandas as pd
+from pathlib import Path
 from yahoo_fin import news
 
+# TODO: validate ticker input; replace with either argparse or typer
 # specify the ticker you want to get headlines for
-ticker = input('Enter a ticker: ')
+ticker = input('Enter a ticker: ').lower()
 
 # shows you where this file is located
-current_dir = os.getcwd()
+current_dir = Path.cwd()
 
 # define filename
-filename = f'{ticker}_news.csv'
+filename = f"{ticker}_news.csv"
 
 # adds filename to path
-filepath = os.path.join(current_dir, filename)
+filepath = Path(current_dir / "csv" / filename)
 
 # check if the file exists in the current directory
-if os.path.isfile(os.path.join(current_dir, filename)):
+if Path(filepath).is_file():
     print(f"{filename} EXISTS in the current dir")
 else:
     print(f"{filename} DOES NOT exist in the current dir")
@@ -43,7 +44,7 @@ today = datetime.datetime.today().strftime('%Y-%m-%d')
 df['Date'] = today
 
 # check if the file exists
-if os.path.isfile(filepath):
+if Path(filepath).is_file():
     # read the existing data into a dataframe
     df2 = pd.read_csv(filepath)
 
