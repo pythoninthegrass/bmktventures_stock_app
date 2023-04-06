@@ -4,10 +4,18 @@ POC app by [mktcowboy](https://github.com/mktcowboy). Scaffolding and tidied up 
 
 ## Quickstart
 ```bash
+# create virtual environment
 python -m venv .venv
 source .venv/bin/activate
+
+# install dependencies
 python -m pip install -r requirements.txt
+
+# run script
 python news.py
+
+# convert py to ipynb
+ipynb-py-convert news.py news.ipynb
 ```
 
 ## TODO
